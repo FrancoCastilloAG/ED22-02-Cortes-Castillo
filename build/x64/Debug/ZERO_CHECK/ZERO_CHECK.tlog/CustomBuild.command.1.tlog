@@ -1,0 +1,10 @@
+^C:\USERS\FRANC\ONEDRIVE\ESCRITORIO\UNIVERSIDAD\ESTRUCTURA DE DATOS\TALLER1\BUILD\CMAKEFILES\0BF9184622777C75424F18B96A45D512\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/franc/OneDrive/Escritorio/universidad/Estructura de datos/Taller1" "-BC:/Users/franc/OneDrive/Escritorio/universidad/Estructura de datos/Taller1/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/franc/OneDrive/Escritorio/universidad/Estructura de datos/Taller1/build/Taller1.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
