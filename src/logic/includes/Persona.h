@@ -1,7 +1,10 @@
 #ifndef Persona_h
 #define Persona_h
 
-#include <opencv2/opencv.hpp>
+#include<opencv2/objdetect.hpp>
+#include<opencv2/highgui.hpp>
+#include<opencv2/imgproc.hpp>
+#include<opencv2/videoio.hpp>
 
 class Persona{
 private:
