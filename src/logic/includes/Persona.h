@@ -5,6 +5,9 @@
 
 class Persona{
 private:
+    int id;
+    int contador_entrada;
+    int contador_salida;
     int xComienzo;
     int yComienzo;
     int xFin;
@@ -13,7 +16,9 @@ private:
     int yCentro;
 public:
     Persona(cv::Rect&);
-
+    int getId();
+    int getContador_salida();
+    int getContador_entrada();
     int getXComienzo();
     int getYComienzo();
     int getXFin();

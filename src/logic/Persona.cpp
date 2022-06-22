@@ -9,6 +9,18 @@ Persona::Persona(cv::Rect &r){
     yCentro = r.y + ((float)r.height/2.0);
 }
 
+int Persona::getId(){
+    return id;
+}
+
+int Persona::getContador_entrada(){
+    return contador_entrada;
+}
+
+int Persona::getContador_salida(){
+    return contador_salida;
+}
+
 int Persona::getXComienzo(){
     return xComienzo;
 }
