@@ -17,6 +17,7 @@ private:
 public:
     Persona(cv::Rect&);
     int getId();
+    void setId(int identidad);
     int getContador_salida();
     int getContador_entrada();
     int getXComienzo();

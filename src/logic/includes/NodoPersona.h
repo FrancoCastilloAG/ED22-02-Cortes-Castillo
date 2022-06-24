@@ -8,11 +8,11 @@ using namespace std;
 class NodoPersona{
 private:
     NodoPersona* next;
-    Persona persona;
+    Persona* persona;
 public:
-    NodoPersona(Persona p);
+    NodoPersona(Persona* p);
     void setNext(NodoPersona* nodo);
-    Persona getPersona();
+    Persona* getPersona();
     NodoPersona* getNext(); 
     ~NodoPersona();
 };

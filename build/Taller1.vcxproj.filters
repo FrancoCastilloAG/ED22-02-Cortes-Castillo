@@ -10,6 +10,12 @@
     <ClCompile Include="C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\src\logic\Persona.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\src\logic\ListaPersonas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\src\logic\NodoPersona.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\CMakeLists.txt" />

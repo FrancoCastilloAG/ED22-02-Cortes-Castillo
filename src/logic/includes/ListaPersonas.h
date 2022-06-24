@@ -7,16 +7,17 @@ using namespace std;
 
 class ListaPersonas{
     private:
-    NodoPersona first;
+    NodoPersona* first;
     int size;
     public:
-    NodoPersona*::getFirst();
-    NodoPersona::setFirst(NodoPersona* nodo);
-    NodoPersona::getNodoPersona(NodoPersona* nodo);
+    ListaPersonas();
+    NodoPersona* getFirst();
+    NodoPersona* setFirst(NodoPersona* nodo);
+    NodoPersona* getNodoPersona(NodoPersona* nodo);
     void add(NodoPersona* nodo);
-    Boolean::del(NodoPersona* nodo);
-    Boolean::isEmpty();
+    bool del(NodoPersona* nodo);
+    bool isEmpty();
     int getSize();
-}
+};
 
 #endif

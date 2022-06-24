@@ -2,21 +2,23 @@
 
 using namespace std;
 
-NodoPersona::Nodopersona(Persona p){
+NodoPersona::NodoPersona(Persona* p){
     this->next=NULL;
     this->persona=p;
 }
 
-Persona::getPersona(){
+Persona* NodoPersona::getPersona(){
     return this->persona;
 }
 
 void NodoPersona::setNext(NodoPersona* next){
-    this->next=NodoPersona;
+    this->next=next;
 }
 
-NodoPersona* nodopersona::getNext(){
+NodoPersona* NodoPersona::getNext(){
     return this->next;
 }
 
-NodoPersona::~NodoPersona();
+NodoPersona::~NodoPersona(){
+    
+}

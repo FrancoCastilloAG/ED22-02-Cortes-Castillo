@@ -13,6 +13,10 @@ int Persona::getId(){
     return id;
 }
 
+void Persona::setId(int identidad){
+    identidad=id;
+}
+
 int Persona::getContador_entrada(){
     return contador_entrada;
 }
