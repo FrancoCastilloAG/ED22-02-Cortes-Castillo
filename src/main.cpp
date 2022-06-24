@@ -9,19 +9,22 @@ using namespace cv;
 using namespace std;
 
 int main(int argc, char** argv){
+    ListaPersonas Listap;
     Detector detector;
     Mat imagen = imread("C:/Users/franc/OneDrive/Escritorio/personas.jpg");
-
-    vector<Persona> found = detector.detect(imagen);
-    /*
-    for (vector<Persona>::iterator i = found.begin(); i != found.end(); ++i){
-        Persona &p = *i;
-        putText(imagen,"id de la persona",Point(p.getXCentro(),p.getYCentro()),FONT_HERSHEY_COMPLEX,0.50,Scalar(255,0,0),2);
-        rectangle(imagen, Point(p.getXComienzo(), p.getYComienzo()), Point(p.getXFin(), p.getYFin()), Scalar(0, 255, 0), 2);
-        circle(imagen, Point(p.getXCentro(), p.getYCentro()), 3, Scalar(0, 0, 255), 3);
-    }
-    */
+    vector<Persona> found = detector.detect(imagen,Listap);
     imshow("ventana", imagen);
     waitKey(0);
+    /*
+    VideoCapture cap("C:/Users/franc/OneDrive/Escritorio/videotaller.mp4");
+    Mat imagen;
+    while(true){
+        //Mat imagen = imread("C:/Users/franc/OneDrive/Escritorio/personas.jpg");
+        cap.read(imagen);
+        vector<Persona> found = detector.detect(imagen);
+        imshow("ventana", imagen);
+        waitKey(20);
+    }
+    */
     return 0;
 }

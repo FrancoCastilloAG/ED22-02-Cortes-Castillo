@@ -10,11 +10,11 @@ Persona::Persona(cv::Rect &r){
 }
 
 int Persona::getId(){
-    return id;
+    return this->id;
 }
 
 void Persona::setId(int identidad){
-    identidad=id;
+    id = identidad;
 }
 
 int Persona::getContador_entrada(){

@@ -5,7 +5,7 @@
 using namespace cv;
 using namespace std;
 
-vector<Persona> Detector::detect(Mat img){
+vector<Persona> Detector::detect(Mat img,ListaPersonas l){
         vector<Rect> found;
         hog.detectMultiScale(img, found, 0, Size(2,2), Size(4,4), 1.05, 2, false);
         vector<Persona> personas;
@@ -13,12 +13,12 @@ vector<Persona> Detector::detect(Mat img){
         for (vector<Rect>::iterator i = found.begin(); i != found.end(); ++i){
             Rect &r = *i;
             Persona p(r);
-            NodoPersona nuevo(p);
-            //setear id
-            putText(img,"hola",Point(nuevo.getPersona()->getXCentro(),nuevo.getPersona()->getYCentro()),FONT_HERSHEY_COMPLEX,0.50,Scalar(255,0,0),2);
-            //rectangle(img, Point(p.getXComienzo(), p.getYComienzo()), Point(p.getXFin(), p.getYFin()), Scalar(0, 255, 0), 2);
-            //circle(img, Point(p.getXCentro(), p.getYCentro()), 3, Scalar(0, 0, 255), 3);
-            //personas.push_back(p);
+            NodoPersona* nuevo(&p);
+            nuevo.getPersona()->setId(contador);
+            l.add(nuevo);
+            putText(img,to_string(nuevo.getPersona()->getId()),Point(nuevo.getPersona()->getXCentro(),nuevo.getPersona()->getYCentro()),FONT_HERSHEY_COMPLEX,0.50,Scalar(255,0,0),1);
+            rectangle(img, Point(nuevo.getPersona()->getXComienzo(), nuevo.getPersona()->getYComienzo()), Point(p.getXFin(), p.getYFin()), Scalar(0, 255, 0), 2);
+            circle(img, Point(nuevo.getPersona()->getXCentro(), nuevo.getPersona()->getYCentro()), 3, Scalar(0, 0, 255), 3);
             contador++;
         }
         return personas;
