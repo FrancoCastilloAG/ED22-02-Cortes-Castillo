@@ -33,12 +33,13 @@ void ListaPersonas::add(NodoPersona* nodo){
     }
     nodo->setNext(this->first);
     this->first->setNext(nodo);
+    setFirst(nodo);
 }
 bool ListaPersonas::del(NodoPersona* nodo){
     NodoPersona* crrt1=this->first;
     NodoPersona* crrt2=crrt1->getNext();
     if(isEmpty()) return false;
-    while((crrt1->getPersona())->getId()!=(nodo->getPersona())->getId() || crrt2!=nullptr){
+    while((crrt2->getPersona())->getId()!=(nodo->getPersona())->getId() || crrt2!=nullptr){
         crrt1=crrt1->getNext();
         crrt2=crrt2->getNext();
     }
@@ -48,10 +49,22 @@ bool ListaPersonas::del(NodoPersona* nodo){
     }
     return false;
 }
-
 bool ListaPersonas::isEmpty(){
     return first==nullptr;
 }
 int ListaPersonas::getSize(){
     return this->size;
+}
+ListaPersonas*  ListaPersonas::getFilteredList(){
+    ListaPersonas* lista= new ListaPersonas();
+    NodoPersona* crrt= this->first;
+    if(isEmpty()) return nullptr;
+    while(crrt!= nullptr){
+        if(lista->getNodoPersona(crrt)==nullptr){
+            lista->add(crrt);
+            crrt->setRep((crrt->getRep())+1);
+        }
+        crrt=crrt->getNext();
+    }
+    return lista;
 }

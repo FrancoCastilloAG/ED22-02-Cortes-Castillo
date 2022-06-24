@@ -1,6 +1,6 @@
 #include "includes/Persona.h"
-
-Persona::Persona(cv::Rect &r){
+using namespace cv;
+Persona::Persona(Rect &r){
     xComienzo = r.x;
     yComienzo = r.y;
     xFin = r.x + r.width;

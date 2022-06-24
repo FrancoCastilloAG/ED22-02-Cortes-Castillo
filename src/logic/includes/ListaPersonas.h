@@ -14,6 +14,7 @@ class ListaPersonas{
     NodoPersona* getFirst();
     NodoPersona* setFirst(NodoPersona* nodo);
     NodoPersona* getNodoPersona(NodoPersona* nodo);
+    ListaPersonas* getFilteredList();
     void add(NodoPersona* nodo);
     bool del(NodoPersona* nodo);
     bool isEmpty();

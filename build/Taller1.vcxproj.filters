@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\src\main.cpp">
+    <ClCompile Include="C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\src\logic\Detector.cpp">
+    <ClCompile Include="C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\src\logic\Detector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\src\logic\Persona.cpp">
+    <ClCompile Include="C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\src\logic\Persona.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\src\logic\ListaPersonas.cpp">
+    <ClCompile Include="C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\src\logic\ListaPersonas.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\src\logic\NodoPersona.cpp">
+    <ClCompile Include="C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\src\logic\NodoPersona.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{1653C6CB-37F0-387E-A09A-D091FF29BA7C}</UniqueIdentifier>
+      <UniqueIdentifier>{6703FE0D-4853-36E0-9F5B-DB25B9643D9A}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
