@@ -9,11 +9,14 @@ class NodoPersona{
 private:
     NodoPersona* next;
     Persona* persona;
+    int rep;
 public:
     NodoPersona(Persona* p);
     void setNext(NodoPersona* nodo);
     Persona* getPersona();
     NodoPersona* getNext(); 
+    int getRep();
+    void setRep(int rep);
     ~NodoPersona();
 };
 
