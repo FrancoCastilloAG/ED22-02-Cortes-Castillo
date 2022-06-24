@@ -7,7 +7,7 @@ enable_testing()
 find_package( OpenCV REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
-add_executable(Taller1 src/main.cpp src/logic/Detector.cpp src/logic/Persona.cpp)
+add_executable(Taller1 src/main.cpp src/logic/Detector.cpp src/logic/Persona.cpp src/logic/ListaPersonas.cpp src/logic/NodoPersona.cpp)
 
 target_link_libraries(Taller1  ${OpenCV_LIBS})
 

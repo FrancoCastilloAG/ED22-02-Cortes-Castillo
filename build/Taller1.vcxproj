@@ -316,6 +316,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\src\main.cpp" />
     <ClCompile Include="C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\src\logic\Detector.cpp" />
     <ClCompile Include="C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\src\logic\Persona.cpp" />
+    <ClCompile Include="C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\src\logic\ListaPersonas.cpp" />
+    <ClCompile Include="C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\src\logic\NodoPersona.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\build\ZERO_CHECK.vcxproj">

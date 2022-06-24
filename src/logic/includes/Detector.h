@@ -1,7 +1,7 @@
 #ifndef Detector_h
 #define Detector_h
 
-#include "Persona.h"
+#include "NodoPersona.h"
 
 using namespace cv;
 using namespace std;
@@ -13,7 +13,7 @@ public:
     Detector() : hog(){
         hog.setSVMDetector(HOGDescriptor::getDefaultPeopleDetector());
     }    
-    vector<Persona> detect(InputArray img);
+    vector<Persona> detect(Mat img);
     void Resizebox(Rect & r) const;
 };
 
