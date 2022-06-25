@@ -55,7 +55,7 @@ Describir brevemente las librerías utilizadas para la instalación y programas 
 
 ### 2.2 Diseño 
 
-Explicar los componentes (módulos o clases) utilizados para resolver el problema. Indicar arquitectura propuesta, diagrama de clases u otro artefacto que estime conveniente para explicar el diseño de su implimentación.
+La implementación de la solución consta de un detector de personas HOG(histograma de gradientes orientados) el cual identificara la personas y le asignara un nodo el cual estará en una lista enlazada junto a otros nodos de personas. Las personas tendrán un identificador, contador propio de entrada y salida además de una locación dentro del video la cual llamaremos centroide , además tendremos 2 áreas enumeradas con 1 y 2. 
 
 ### 2.3 Implementación 
 
