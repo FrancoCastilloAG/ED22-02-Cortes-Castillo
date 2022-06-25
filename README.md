@@ -92,9 +92,8 @@ Como conclusión con respecto a este taller se puede decir que gracias a este nu
 Para la instalación del IDE y configuración e instalación de openCV seguimos la primera ayudantía de nuestro ayudante Cristian galleguillos la cual esta en la plataforma adjunto link https://drive.google.com/drive/folders/1MTik-UAPAi0MgkdM-O9t6s_wD9JSVolE
 
 # Referecia
-
-Indicar los libros, páginas web, documentos, etc. Utilizados en el trabajo. Por ejemplo:
-
-1. MONTERO, J.,Metodos matemáticos aplicados a la ganadería.3aed. Sevilla: Ediciones de la pradera,2007.
-2. LVARADO,   J.   P.,¿Qué   debe   contener   un   artículo   científico?.http://www.ie.tec.ac.cr/palvarado/pmwiki/index.php/MSc/Art\%c3\%adculoCient\%c3\%adfico. Fe-cha de acceso:13/Nov/2018
+1.https://stackoverflow.com/
+2.Murtaza's workshop.LEARN OPENCV C++ in 4 HOURS | Including 3x Projects | Computer Vision.https://www.youtube.com/watch?v=2FYm3GOonhk
+3.https://pyimagesearch.com/2018/08/13/opencv-people-counter/
+4.tochiVision.[OpenCV/C++ Tutorial] People Detection Using Histogram of Oriented Gradients (HOG).https://www.youtube.com/watch?v=cvGEWBO0Vho
 
