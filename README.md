@@ -8,14 +8,14 @@
 
 **Alumnos:**
 
-* Claudio 01 (Rol)
-* Alumno 02 (Rol)
+* Claudio Cortés Mondaca (Coordinador)
+* Franco Castillo Astorga ()
 
 ## Resumen 
 
-> Agregar un resumen que describa el trabajo realizado y sus resultados. (Entre 150 y 180 palabras)
-> Más cosas...
-> El resumen indicarlo como cita con el comando `>`
+>De las primeras tareas de este taller es comienza con la instalación de la librería OpenCV al IDE (Visual Studio Code), la cual permitiría manejar las imágenes y video correspondientes al taller. Ya instalada la librería, se comienza con la tarea de utilizar esta, de partida se utilizará para abrir una imagen y lograr hacer la correcta detección de personas dentro de la imagen. 
+Teniendo en cuenta la detección, se comienza con la segunda parte,la implementación de los requerimientos, se implementa la clase persona y al nodoPersona, luego de esto se construye la clase de la linkedlist la cual es implementada como lista enlazada simple, donde se podrán almacenar las personas que serán detectadas en las imágenes gracias a la librería.
+Con respecto a los resultados, se logran obtener las detecciones correspondientes, además hay una correcta implementación del cálculo de zonas de detección, sin embargo, se esperan mejorar resultados con respecto a la clase persona.
 
 ## 1. Introducción
 
@@ -27,29 +27,19 @@ Las comparaciones deben concretarse con hechos y datos, sin frases ambiguas o t�
 
 ### 1.1 Descripción del problema
 
-Dado el laboratorio describir como se entiende el problema bajo sus propias palabras.
+Con respecto a la descripción del problema se debe ser capaz de hacer uso de los conocimiento aprendidos en clases, y esto acompañado de la correcta utilización de la librería OpenCV se debe llegar a cumplir con los requerimiento que son pedidos.
 
 ### 1.2 Objetivos 
 
 **Objetivo General**
 
-El fin que se desea llegar. (Comenzar con un verbo: "Construir un sistema...", "Desarrollar un sistema...", etc)
+El objetivo general es construir un sistema independiente, que trabaje de manera eficiente y eficaz, que sea capaz de detectar personas diferentes que circulan por un espacio enfrente de una cámara de seguridad. 
 
 **Objetivos específicos**
 
-1. Objetivo 1
-2. Objetivo 2
-3. Objetivos 3
-
-Los objetivos específicos son acciones específicas que son desarrolladas para lograr cumplir el objetivo general, por ejemplo:
-
-1. Investigar  el  estado  del  arte  de  visión  por  computador  y  audio  para  resolver  tareas de  clasificación unimodal y multimodal aplicado  al  problema  de  reconocimiento  de emociones.
-2.  Seleccionar  uno  o  dos  métodos  estudiados  en  el  estado  del  arte  para  la  estimación  de  laemoción utilizando datos unimodales o multimodales.
-3.  Implementar los métodos seleccionados utilizando el lenguaje de programación Python y laslibrerías suministradas por Pytorch.
-4.  Validar  los  resultados  por  medio  bases  de  datos  especializadas  para  el  desarrollo  deaplicaciones basadas en la estimación de la emoción y que incluyan varios modos de atributoscomo: imágenes, sonido y/o texto.
-5.  Proponer  mejoras  a  los  modelos  implementados  para  mejorar  su  desempeño  en  futurasimplementaciones o proyectos de investigación.
-6.  Difundir los resultados en medios científicos nacionales o internacionales.
-
+1. Indagar de manera exhaustiva la mejor implementación de código, de tal manera que sea un código con fácil debugging. 
+2. Implementar los métodos seleccionados utilizando el lenguaje de programación C++ y las librerías suministradas por OpenCV.
+3. Tener una buena recepción a una retroalimentación por parte de terceros ante errores dentro del taller.
 ### 1.3 Solución propuesta
 
 Esbozo de la solución propuesta, se espera que esta vaya evolucionando a medida que se avanza en el proyecto.
@@ -93,8 +83,10 @@ El detector de caras utilizado fue xxx. Para utilizarlo se debe.... El código p
 La primera linea carga el archivo de entrenamiento... etc
 
 ## 3. Resultados obtenidos
+Dentro de los avances del taller hasta este momento, los resultados obtenidos son los esperados, gracias a la correcta organización y coordinación entre compañeros.
 
 ## 4. Conclusiones
+Como conclusión con respecto a este taller se puede decir que gracias a este nuevo reto en el que debemos utilizar una nueva librería y un nuevo lenguaje de programación, formará y será una parte fundamental para el desarrollo a futuro de el desarrollo del estudiante, ya que con estas nuevas herramientas se logrará ser un profesional más completo y adaptable.
 
 # Anexos
 
