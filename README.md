@@ -43,9 +43,10 @@ El objetivo general es construir un sistema independiente, que trabaje de manera
 
 ### 1.3 Solución propuesta
 
-Esbozo de la solución propuesta, se espera que esta vaya evolucionando a medida que se avanza en el proyecto.
+Las personas tendrán un centroide asociado y estarán dispuestos en 2 areas enumeradas  1 y 2,si la persona camina del área 1 al área 2 se dira que esta entrando y si pasa del área 2 a el área 1 significa que esta saliendo.
 
 ## 2. Materiales y métodos
+
 
 
 ### 2.1 Instalación
@@ -56,31 +57,27 @@ Describir brevemente las librerías utilizadas para la instalación y programas 
 
 Explicar los componentes (módulos o clases) utilizados para resolver el problema. Indicar arquitectura propuesta, diagrama de clases u otro artefacto que estime conveniente para explicar el diseño de su implimentación.
 
-### 2.3 Implementación
+### 2.3 Implementación 
 
-Explicar brevemente algunos aspectos de implementación: Por ejemplo, detector de caras utilizado. Se pueden realizar pequeñas reseñas al código para indicar elementos importantes en el trabajo.
+#### Detector de personas
 
-Por ejemplo, 
-
-#### Detector de caras
-
-El detector de caras utilizado fue xxx. Para utilizarlo se debe.... El código para detectar una cara en una imagen se muestra a continuación:
+El detector de personas es un histograma de gradientes orientado(HOG).para utilizarlo se le debe entregar un elemento de tipo Mat el cual será analizado por el HOG:
 
 ```c++
- 1. faceCascadePath = "./haarcascade_frontalface_default.xml";
- 2. faceCascade.load( faceCascadePath )
- 3. std::vector<Rect> faces;
- 4. faceCascade.detectMultiScale(frameGray, faces);
-
- 5. for ( size_t i = 0; i < faces.size(); i++ )
- 6. {
- 7.  int x1 = faces[i].x;
- 8.  int y1 = faces[i].y;
- 9.  int x2 = faces[i].x + faces[i].width;
-10.  int y2 = faces[i].y + faces[i].height;
+1.//en el main    
+2.Detector detector;
+3.    Mat imagen = imread("C:/Users/franc/OneDrive/Escritorio/personas.jpg");
+4.    vector<Persona> found = detector.detect(imagen,Listap):
+//en la clase detector
+5.vector<Persona> Detector::detect(InputArray img){
+6.vector<Rect> found;
+7.     if (m == Default)
+8.        hog.detectMultiScale(img, found, 0, Size(2,2), Size(4,4), 1.05, 2, false);
+9.     else if (m == Daimler)
+10.       hog_d.detectMultiScale(img, found, 1, Size(2,2), Size(4,4), 1.05, 3, true);
 11. }
 ```
-La primera linea carga el archivo de entrenamiento... etc
+En el main se le entrega el Mat a traves de la llamada de una funcion contenida en la clase detector en este caso se utiliza el detector del tipo default(con el valor final false) ya que se obtuvo una mejora en los resultados de apoximadamente el 80% depende de la configuracion del HOG.
 
 ## 3. Resultados obtenidos
 Dentro de los avances del taller hasta este momento, los resultados obtenidos son los esperados, gracias a la correcta organización y coordinación entre compañeros.
@@ -90,9 +87,9 @@ Como conclusión con respecto a este taller se puede decir que gracias a este nu
 
 # Anexos
 
-## Anexo A: Instalación librerías OpenCV
+## Anexo A y B Instalación de IDE,Instalación librerías OpenCV y configuración librerías OpenCV
 
-## Anexo B: Instalación de IDE y configuración librerías OpenCV
+Para la instalación del IDE y configuración e instalación de openCV seguimos la primera ayudantía de nuestro ayudante Cristian galleguillos la cual esta en la plataforma adjunto link https://drive.google.com/drive/folders/1MTik-UAPAi0MgkdM-O9t6s_wD9JSVolE
 
 # Referecia
 
