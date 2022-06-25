@@ -19,11 +19,10 @@ Con respecto a los resultados, se logran obtener las detecciones correspondiente
 
 ## 1. Introducción
 
-La primera función de un reporte técnico es plasmar la información necesaria para que otras personas puedan reproducir el sistema propuesto o puedan entender su fucnionamiento . Para cumplir anterior se debe diferenciar claramente entre los artefactos de diseño e implementación. En el caso de un desarrollo tecnológico los algoritmos son importantes como componente de diseño y los programas generalmente son irrelevantes y deben resumidos o agregados en anexos en el documento. Los programas no son importantes en el documento, salvo si se quiere explicar conceptos expecíficos del lenguaje o del algoritmo implementado.
+Para el desarrollo de este taller se utilizan conocimiento en programación orientada al objeto y estructura de datos, tales como las linkedlist, además se utiliza la IDE Visual Studio Code en la cual se hace uso de la librería OpenCV, la cual aporta grandes herramientas para el reconocimiento y seguimiento de objetos en video o imagen.
+El taller imparte detectar personas a la salida de un establecimiento y dada esa detección se pide implementar los diferentes requerimientos que el usuario solicita.
+De parte de los estudiantes se busca llegar de manera correcta al resultado final del taller, el cual es implementar de manera eficaz y eficiente este proyecto.
 
-La redacción debe ser formal y de modo impersonal. No se debe utlizar primera persona del singular o plural. Se debe evitar el uso de cualquier calificativo sustituyéndolo siempre utilizando datos concretos y rastreables en documentos o publicaciones a través de referencias bibliográficas. Por ejemplo, no calificar algo como: "muy importante", "sustancial", "muy usadoo" o "mucho mejor".
-
-Las comparaciones deben concretarse con hechos y datos, sin frases ambiguas o términos generales. Por ejemplo, nunca se debe redactar frases como "el método es mejor que el método B". Lo correcto es decir, el error promedio de el método A es de 5 %, correspondiendo a la mitad del error de 10% obtenido utilizando el método B". El tiempo verbal es usualmente presente. No se debe perder de vista que se está explicando ”como hacer algo”, en vez de ”qué se hizo”. Todo aspecto circunstancial es irrelevante para el documento. Por ejemplo, si se ha desarrollado en el laboratorio X, o en el curso Y, con el profesor Z, etc.
 
 ### 1.1 Descripción del problema
 
