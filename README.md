@@ -40,13 +40,13 @@ El objetivo general es construir un sistema independiente, que trabaje de manera
 1. Indagar de manera exhaustiva la mejor implementación de código, de tal manera que sea un código con fácil debugging. 
 2. Implementar los métodos seleccionados utilizando el lenguaje de programación C++ y las librerías suministradas por OpenCV.
 3. Tener una buena recepción a una retroalimentación por parte de terceros ante errores dentro del taller.
+
 ### 1.3 Solución propuesta
 
 Esbozo de la solución propuesta, se espera que esta vaya evolucionando a medida que se avanza en el proyecto.
 
 ## 2. Materiales y métodos
 
-Explicar brevemente como se espera desarrollar el trabajo de implementación.
 
 ### 2.1 Instalación
 
