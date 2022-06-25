@@ -9,7 +9,7 @@
 **Alumnos:**
 
 * Claudio Cortés Mondaca (Coordinador)
-* Franco Castillo Astorga ()
+* Franco Castillo Astorga (Implementador)
 
 ## Resumen 
 
@@ -47,11 +47,11 @@ Las personas tendrán un centroide asociado y estarán dispuestos en 2 areas enu
 
 ## 2. Materiales y métodos
 
-
+La mayoria del trabajo de implementacion esta hecho ya que logramos identificar las personas tanto en video como en imagenes. 
 
 ### 2.1 Instalación
 
-Describir brevemente las librerías utilizadas para la instalación y programas utilizados para la ejecución del código. (Agregar una sección de anexo para describir como fueron instaladas las librerías de OpenCV y la IDE utilzada para el trabajo)
+Las librerias utilizadas fueron OpenCV en la cual utilizamos una sublibreria llamada HOG(histograma de gradientes oridentado) todo esto lo ejecutamos en la IDE de desarrollo visual studio code.
 
 ### 2.2 Diseño 
 
