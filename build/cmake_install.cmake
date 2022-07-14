@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/franc/OneDrive/Escritorio/universidad/Estructura de datos/Taller1
+# Install script for directory: C:/Users/Claudio Córtes M}/Desktop/Carpetas/Universidad/Tercer Año/Estrutura de Datos/Taller1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/franc/OneDrive/Escritorio/universidad/Estructura de datos/Taller1/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Claudio Córtes M}/Desktop/Carpetas/Universidad/Tercer Año/Estrutura de Datos/Taller1/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

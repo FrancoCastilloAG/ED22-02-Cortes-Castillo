@@ -1,12 +1,28 @@
 #include "includes/Persona.h"
-
-Persona::Persona(cv::Rect &r){
+using namespace cv;
+Persona::Persona(Rect &r){
     xComienzo = r.x;
     yComienzo = r.y;
     xFin = r.x + r.width;
     yFin = r.y + r.height;
     xCentro = r.x + ((float)r.width/2.0);
     yCentro = r.y + ((float)r.height/2.0);
+}
+
+int Persona::getId(){
+    return this->id;
+}
+
+void Persona::setId(int identidad){
+    id = identidad;
+}
+
+int Persona::getContador_entrada(){
+    return contador_entrada;
+}
+
+int Persona::getContador_salida(){
+    return contador_salida;
 }
 
 int Persona::getXComienzo(){

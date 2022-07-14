@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\build\CMakeFiles\0bf9184622777c75424f18b96a45d512\PACKAGE_force.rule">
+    <CustomBuild Include="C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\build\CMakeFiles\63adbe1ad013259c3c5a1761f99171e1\PACKAGE_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{75E0081D-A51D-33B7-96E0-2D8E543C0FC5}</UniqueIdentifier>
+      <UniqueIdentifier>{B9428A54-1DF6-346C-9D23-8F8D2F67349B}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

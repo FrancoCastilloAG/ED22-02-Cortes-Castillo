@@ -1,0 +1,98 @@
+# ED22-02-Cortes-Castillo
+![UCN](images/60x60-ucn-negro.png)
+
+
+# Informe Técnico 
+## Curso: Estructura de datos
+### Detección y reidentificación de caras en secuencias de imágenes o video
+
+**Alumnos:**
+
+* Claudio Cortés Mondaca (Coordinador)
+* Franco Castillo Astorga (Implementador)
+
+## Resumen 
+
+>De las primeras tareas de este taller es comienza con la instalación de la librería OpenCV al IDE (Visual Studio Code), la cual permitiría manejar las imágenes y video correspondientes al taller. Ya instalada la librería, se comienza con la tarea de utilizar esta, de partida se utilizará para abrir una imagen y lograr hacer la correcta detección de personas dentro de la imagen. 
+Teniendo en cuenta la detección, se comienza con la segunda parte,la implementación de los requerimientos, se implementa la clase persona y al nodoPersona, luego de esto se construye la clase de la linkedlist la cual es implementada como lista enlazada simple, donde se podrán almacenar las personas que serán detectadas en las imágenes gracias a la librería.
+Con respecto a los resultados, se logran obtener las detecciones correspondientes, además hay una correcta implementación del cálculo de zonas de detección, sin embargo, se esperan mejorar resultados con respecto a la clase persona.
+
+## 1. Introducción
+
+Para el desarrollo de este taller se utilizan conocimiento en programación orientada al objeto y estructura de datos, tales como las linkedlist, además se utiliza la IDE Visual Studio Code en la cual se hace uso de la librería OpenCV, la cual aporta grandes herramientas para el reconocimiento y seguimiento de objetos en video o imagen.
+El taller imparte detectar personas a la salida de un establecimiento y dada esa detección se pide implementar los diferentes requerimientos que el usuario solicita.
+De parte de los estudiantes se busca llegar de manera correcta al resultado final del taller, el cual es implementar de manera eficaz y eficiente este proyecto.
+
+
+### 1.1 Descripción del problema
+
+Con respecto a la descripción del problema se debe ser capaz de hacer uso de los conocimiento aprendidos en clases, y esto acompañado de la correcta utilización de la librería OpenCV se debe llegar a cumplir con los requerimiento que son pedidos.
+
+### 1.2 Objetivos 
+
+**Objetivo General**
+
+El objetivo general es construir un sistema independiente, que trabaje de manera eficiente y eficaz, que sea capaz de detectar personas diferentes que circulan por un espacio enfrente de una cámara de seguridad. 
+
+**Objetivos específicos**
+
+1. Indagar de manera exhaustiva la mejor implementación de código, de tal manera que sea un código con fácil debugging. 
+2. Implementar los métodos seleccionados utilizando el lenguaje de programación C++ y las librerías suministradas por OpenCV.
+3. Tener una buena recepción a una retroalimentación por parte de terceros ante errores dentro del taller.
+
+### 1.3 Solución propuesta
+
+Las personas tendrán un centroide asociado y estarán dispuestos en 2 areas enumeradas  1 y 2,si la persona camina del área 1 al área 2 se dira que esta entrando y si pasa del área 2 a el área 1 significa que esta saliendo.
+
+## 2. Materiales y métodos
+
+La mayoria del trabajo de implementacion esta hecho ya que logramos identificar las personas tanto en video como en imagenes. 
+
+### 2.1 Instalación
+
+Las librerias utilizadas fueron OpenCV en la cual utilizamos una sublibreria llamada HOG(histograma de gradientes oridentado) todo esto lo ejecutamos en la IDE de desarrollo visual studio code.
+
+### 2.2 Diseño 
+
+La implementación de la solución consta de un detector de personas HOG(histograma de gradientes orientados) el cual identificara la personas y le asignara un nodo el cual estará en una lista enlazada junto a otros nodos de personas. Las personas tendrán un identificador, contador propio de entrada y salida además de una locación dentro del video la cual llamaremos centroide , además tendremos 2 áreas enumeradas con 1 y 2. 
+
+### 2.3 Implementación 
+
+#### Detector de personas
+
+El detector de personas es un histograma de gradientes orientado(HOG).para utilizarlo se le debe entregar un elemento de tipo Mat el cual será analizado por el HOG:
+
+```c++
+1.//en el main    
+2.Detector detector;
+3.    Mat imagen = imread("C:/Users/franc/OneDrive/Escritorio/personas.jpg");
+4.    vector<Persona> found = detector.detect(imagen,Listap):
+//en la clase detector
+5.vector<Persona> Detector::detect(InputArray img){
+6.vector<Rect> found;
+7.     if (m == Default)
+8.        hog.detectMultiScale(img, found, 0, Size(2,2), Size(4,4), 1.05, 2, false);
+9.     else if (m == Daimler)
+10.       hog_d.detectMultiScale(img, found, 1, Size(2,2), Size(4,4), 1.05, 3, true);
+11. }
+```
+En el main se le entrega el Mat a traves de la llamada de una funcion contenida en la clase detector en este caso se utiliza el detector del tipo default(con el valor final false) ya que se obtuvo una mejora en los resultados de apoximadamente el 80% depende de la configuracion del HOG.
+
+## 3. Resultados obtenidos
+Dentro de los avances del taller hasta este momento, los resultados obtenidos son los esperados, gracias a la correcta organización y coordinación entre compañeros.
+
+## 4. Conclusiones
+Como conclusión con respecto a este taller se puede decir que gracias a este nuevo reto en el que debemos utilizar una nueva librería y un nuevo lenguaje de programación, formará y será una parte fundamental para el desarrollo a futuro de el desarrollo del estudiante, ya que con estas nuevas herramientas se logrará ser un profesional más completo y adaptable.
+
+# Anexos
+
+## Anexo A y B Instalación de IDE,Instalación librerías OpenCV y configuración librerías OpenCV
+
+Para la instalación del IDE y configuración e instalación de openCV seguimos la primera ayudantía de nuestro ayudante Cristian galleguillos la cual esta en la plataforma adjunto link https://drive.google.com/drive/folders/1MTik-UAPAi0MgkdM-O9t6s_wD9JSVolE
+
+# Referecia
+1.https://stackoverflow.com/
+2.Murtaza's workshop.LEARN OPENCV C++ in 4 HOURS | Including 3x Projects | Computer Vision.https://www.youtube.com/watch?v=2FYm3GOonhk
+3.https://pyimagesearch.com/2018/08/13/opencv-people-counter/
+4.tochiVision.[OpenCV/C++ Tutorial] People Detection Using Histogram of Oriented Gradients (HOG).https://www.youtube.com/watch?v=cvGEWBO0Vho
+

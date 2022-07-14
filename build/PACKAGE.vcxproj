@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C24A1DCC-6C56-318E-B7C6-EFF1BBBE65D0}</ProjectGuid>
+    <ProjectGuid>{880D7D71-4A98-3589-8B22-CE9A86B546A0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -68,7 +68,7 @@
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-cd "C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\build"
+cd "C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\build"
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
@@ -86,7 +86,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-cd "C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\build"
+cd "C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\build"
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
@@ -104,7 +104,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-cd "C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\build"
+cd "C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\build"
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
@@ -122,7 +122,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-cd "C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\build"
+cd "C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\build"
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
@@ -137,7 +137,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\build\CMakeFiles\0bf9184622777c75424f18b96a45d512\PACKAGE_force.rule">
+    <CustomBuild Include="C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\build\CMakeFiles\63adbe1ad013259c3c5a1761f99171e1\PACKAGE_force.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 cd .
@@ -149,7 +149,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\build\CMakeFiles\PACKAGE_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\build\CMakeFiles\PACKAGE_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"> </Message>
@@ -163,7 +163,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\build\CMakeFiles\PACKAGE_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\build\CMakeFiles\PACKAGE_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"> </Message>
@@ -177,7 +177,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\build\CMakeFiles\PACKAGE_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\build\CMakeFiles\PACKAGE_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"> </Message>
@@ -191,20 +191,20 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\build\CMakeFiles\PACKAGE_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\build\CMakeFiles\PACKAGE_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\build\ZERO_CHECK.vcxproj">
-      <Project>{E7650619-49C4-335E-A6E0-E380F8B4FC53}</Project>
+    <ProjectReference Include="C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\build\ZERO_CHECK.vcxproj">
+      <Project>{C7CD2A77-1FE5-3C5C-99F7-570F7CF126FE}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\franc\OneDrive\Escritorio\universidad\Estructura de datos\Taller1\build\ALL_BUILD.vcxproj">
-      <Project>{28BFDD0E-DFC4-3FB6-9279-BA850EFEBD62}</Project>
+    <ProjectReference Include="C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\build\ALL_BUILD.vcxproj">
+      <Project>{6EDD1AF6-F9BB-3379-8066-33901411FFBC}</Project>
       <Name>ALL_BUILD</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

@@ -1,10 +1,16 @@
 #ifndef Persona_h
 #define Persona_h
 
-#include <opencv2/opencv.hpp>
+#include<opencv2/objdetect.hpp>
+#include<opencv2/highgui.hpp>
+#include<opencv2/imgproc.hpp>
+#include<opencv2/videoio.hpp>
 
 class Persona{
 private:
+    int id;
+    int contador_entrada;
+    int contador_salida;
     int xComienzo;
     int yComienzo;
     int xFin;
@@ -13,7 +19,10 @@ private:
     int yCentro;
 public:
     Persona(cv::Rect&);
-
+    int getId();
+    void setId(int identidad);
+    int getContador_salida();
+    int getContador_entrada();
     int getXComienzo();
     int getYComienzo();
     int getXFin();
