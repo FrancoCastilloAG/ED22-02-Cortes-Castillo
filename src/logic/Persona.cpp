@@ -1,6 +1,18 @@
 #include "includes/Persona.h"
+<<<<<<< Updated upstream
 
 Persona::Persona(cv::Rect &r){
+=======
+#include <opencv2/objdetect.hpp>
+#include <opencv2/highgui.hpp>
+#include <opencv2/imgproc.hpp>
+#include <opencv2/videoio.hpp>
+
+#include <iostream>
+#include <iomanip>
+using namespace cv;
+Persona::Persona(Rect &r){
+>>>>>>> Stashed changes
     xComienzo = r.x;
     yComienzo = r.y;
     xFin = r.x + r.width;
