@@ -15,13 +15,12 @@ void ReconocerPersonas(ListaPersonas* Detectadas){
         imagen = imread("C:/Datos Taller/"+nombre+" ("+to_string(j)+").png" );
         detector.toggleMode();
         Point p1(0, 384),p2(1366, 384);//line point´s
-        int thickness = 2; //weith line
+        int thickness = 1; //weith line
         line(imagen, p1, p2, Scalar(255, 0, 0),thickness, LINE_8); //draw a line between p1 and p2
         vector<Persona> found = detector.detect(imagen);
         for (vector<Persona>::iterator i = found.begin(); i != found.end(); ++i) {
             Persona &p = *i;
             cout << "(" << p.getXComienzo() << ", " << p.getYComienzo() << ")" << endl;
-            //detector.adjustRect(p);
             rectangle(imagen, Point(p.getXComienzo(), p.getYComienzo()), Point(p.getXFin(), p.getYFin()), Scalar(0, 0, 255), 2);
             circle(imagen,Point(p.getXCentro(), p.getYCentro()), 3,Scalar(0, 0, 255), 3);
             circle(imagen,Point(p.getXComienzo(), p.getYComienzo()), 3,Scalar(255, 0, 255), 2);
@@ -37,18 +36,34 @@ void ReconocerPersonas(ListaPersonas* Detectadas){
    }
    
 }
-int FlujoEntrada(ListaPersonas* entrantes){
-    return entrantes->getSize();
+int FlujoEntrada(ListaPersonas* Detectadas){
+    int count=0;
+    NodoPersona* crrt = Detectadas->getFirst();
+    while(crrt!=nullptr){
+        if(crrt->getPersona()->getEntrante()){
+             count++;
+        }
+        crrt=crrt->getNext();
+    }
+    return count;
 }
-int FlujoSalida(ListaPersonas* salientes){
-    return salientes->getSize();
+int FlujoSalida(ListaPersonas* Detectadas){
+    int count=0;
+    NodoPersona* crrt = Detectadas->getFirst();
+    while(crrt!=nullptr){
+        if(crrt->getPersona()->getSaliente()){
+             count++;
+        }
+        crrt=crrt->getNext();
+    }
+    return count;
 }
-double FlujoEntradaPorHora(ListaPersonas* entrantes,int horas){
-    double valor=(entrantes->getSize())/horas;
+double FlujoEntradaPorHora(ListaPersonas* Detectadas,int horas){
+    double valor=(FlujoEntrada(Detectadas))/horas;
     return valor;
 }
-double FlujoSalidaPorhora(ListaPersonas* salientes, int horas){
-    double valor=(salientes->getSize())/horas;
+double FlujoSalidaPorhora(ListaPersonas* Detectadas, int horas){
+    double valor=(FlujoSalida(Detectadas))/horas;
     return valor;
 }
 /*void showList(ListaPersonas* lista){
@@ -63,10 +78,9 @@ double FlujoSalidaPorhora(ListaPersonas* salientes, int horas){
 
 int main(int argc, char** argv)
 {
-   
     ListaPersonas* Detectadas= new ListaPersonas();
     cout<<"Hello world!"<<endl;
-     //ReconocerPersonas(Detectadas);
+    //ReconocerPersonas(Detectadas);
     //menu
     int opcion=-1;
     int op=-2;
@@ -85,17 +99,17 @@ int main(int argc, char** argv)
             cout<<"[4]Flujo de personas que salen por hora"<<endl;
             cin>>op;
             if (op==1){
-                cout<<"entró 1"<<endl;
-                //FlujoEntrada(entrantes);
+                cout<<"La cantidad de personas que ingresaron a la zona establecida fueron: "<<to_string(FlujoEntrada(Detectadas))<<endl;
             }else if(op==2){
-                cout<<"entró 2"<<endl;
-                //FlujoSalida(salientes);
+                cout<<"La cantidad de personas que salieron de la zona establecida fueron: "<<to_string(FlujoSalida(Detectadas))<<endl;
             }else if(op==3){
-                cout<<"entró 3"<<endl;
-                //FlujoEntradaPorHora(entrantes);
+                int horas;
+                cout<<"¿Flujo de personas en cuantas horas?: "<<endl;cin>>horas;
+                cout<<"El flujo de personas que ingresaron por la el tiempo establecido: "<<to_string(FlujoEntradaPorHora(Detectadas,horas))<<"personas/hora"<<endl;
             }else if(op==4){
-                cout<<"entró 4"<<endl;
-                //FlujoSalidaPorhora(salientes);
+                int horas;
+                cout<<"¿Flujo de personas en cuantas horas?: "<<endl;cin>>horas;
+                cout<<"El flujo de personas que salieron en el tiempo establecido: "<<to_string(FlujoSalidaPorhora(Detectadas,horas))<<" personas/hora"<<endl;
             }
             cout<<"¿Desea salir?(Presione -1)"<<endl;
             cin>>op;

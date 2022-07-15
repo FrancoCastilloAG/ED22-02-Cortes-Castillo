@@ -15,7 +15,6 @@ Persona::Persona(Rect &r){
     yFin = r.y + r.height;
     xCentro = r.x + ((float)r.width/2.0);
     yCentro = r.y + ((float)r.height/2.0);
-    
     this->entrante=false;
     this->saliente= false;
 }

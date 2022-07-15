@@ -56,7 +56,7 @@ void ListaPersonas:: changeEstado(NodoPersona* n1, NodoPersona* n2){
     if(p1->getYCentro()<=384 && p2->getYCentro()>=384 ){
         p1->setSaliente(true);
     }else if(p1->getYCentro()>=384 && p2->getYCentro()<=384 ){
-        p1->setSaliente(true);
+        p1->setEntrante(true);
     }
 }
 double ListaPersonas:: getDistance(NodoPersona* nodo1, NodoPersona* nodo2){
