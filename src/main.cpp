@@ -1,51 +1,18 @@
 #include <opencv2/objdetect.hpp>
-
 #include "logic/includes/Detector.h"
 #include "logic/includes/Persona.h"
-
+#include "logic/includes/ListaPersonas.h"
+#include "logic/includes/NodoPersona.h"
 using namespace cv;
 using namespace std;
 
-<<<<<<< Updated upstream
-int main(int argc, char** argv){
-    Detector detector;
-    Mat imagen = imread("C:/Users/franc/OneDrive/Escritorio/personas.jpg");
-
-    vector<Persona> found = detector.detect(imagen);
-    for (vector<Persona>::iterator i = found.begin(); i != found.end(); ++i){
-        Persona &p = *i;
-        rectangle(imagen, Point(p.getXComienzo(), p.getYComienzo()), Point(p.getXFin(), p.getYFin()), Scalar(0, 255, 0), 2);
-        circle(imagen, Point(p.getXCentro(), p.getYCentro()), 3, Scalar(0, 0, 255), 3);
-    }
-    imshow("ventana", imagen);
-    waitKey(0);
-=======
-
-    /*
-    int main(int argc, char** argv){
-    ListaPersonas Listap;
-    Detector detector;
-    Mat imagen = imread("C:/Users/franc/OneDrive/Escritorio/personas.jpg");
-    vector<Persona> found = detector.detect(imagen,Listap);
-    imshow("ventana", imagen);
-    waitKey(0);
-    VideoCapture cap("C:/Users/franc/OneDrive/Escritorio/videotaller.mp4");
-    Mat imagen;
-    while(true){
-        //Mat imagen = imread("C:/Users/franc/OneDrive/Escritorio/personas.jpg");
-        cap.read(imagen);
-        vector<Persona> found = detector.detect(imagen);
-        imshow("ventana", imagen);
-        waitKey(20);
-    }
-    */
-void ReconocerPersonas(){
+void ReconocerPersonas(ListaPersonas* Detectadas){
     int fin=214;
     string nombre="Captura de pantalla";
-    for(int i=178;i<fin+1;i++){
+    for(int j=178;j<fin+1;j++){
         Detector detector;
         Mat imagen;
-        imagen = imread("C:/Datos Taller/"+nombre+" ("+to_string(i)+").png" );
+        imagen = imread("C:/Datos Taller/"+nombre+" ("+to_string(j)+").png" );
         detector.toggleMode();
         Point p1(0, 384),p2(1366, 384);//line point´s
         int thickness = 2; //weith line
@@ -59,9 +26,14 @@ void ReconocerPersonas(){
             circle(imagen,Point(p.getXCentro(), p.getYCentro()), 3,Scalar(0, 0, 255), 3);
             circle(imagen,Point(p.getXComienzo(), p.getYComienzo()), 3,Scalar(255, 0, 255), 2);
             circle(imagen,Point(p.getXFin(), p.getYFin()), 3,Scalar(0, 255, 255), 2);
-    }
-    imshow("People detector", imagen);
-    waitKey(0);
+            NodoPersona* nodo= new NodoPersona(p);
+            if(j==178){
+                Detectadas->add(nodo);
+            }else {
+                Detectadas->CompareAdd(nodo);
+            }
+           
+   }
    }
    
 }
@@ -79,7 +51,7 @@ double FlujoSalidaPorhora(ListaPersonas* salientes, int horas){
     double valor=(salientes->getSize())/horas;
     return valor;
 }
-void showList(ListaPersonas* lista){
+/*void showList(ListaPersonas* lista){
     NodoPersona* crrt=lista->getFirst();
     if(crrt==nullptr) return ;
     while(crrt!=nullptr){
@@ -87,13 +59,14 @@ void showList(ListaPersonas* lista){
         //cout
         crrt=crrt->getNext();
     }
+}*/
 
-}
 int main(int argc, char** argv)
 {
+   
+    ListaPersonas* Detectadas= new ListaPersonas();
     cout<<"Hello world!"<<endl;
-    ListaPersonas* entrantes= new ListaPersonas();
-    ListaPersonas* salientes= new ListaPersonas();  
+     //ReconocerPersonas(Detectadas);
     //menu
     int opcion=-1;
     int op=-2;
@@ -130,8 +103,5 @@ int main(int argc, char** argv)
           cout<<"salio "<<endl;
     }
 
-    //ReconocerPersonas();
-
->>>>>>> Stashed changes
     return 0;
 }

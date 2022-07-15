@@ -11,15 +11,20 @@ private:
     int yFin;
     int xCentro;
     int yCentro;
+    bool entrante;
+    bool saliente;
 public:
     Persona(cv::Rect&);
-
     int getXComienzo();
     int getYComienzo();
     int getXFin();
     int getYFin();
     int getXCentro();
     int getYCentro();
+    bool getEntrante();
+    bool getSaliente();
+    void setEntrante(bool b);
+    void setSaliente(bool b);
 };
 
 #endif

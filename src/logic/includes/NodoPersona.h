@@ -10,7 +10,7 @@ private:
     NodoPersona* next;
     Persona* persona;
 public:
-    NodoPersona(Persona* p);
+    NodoPersona(Persona p);
     void setNext(NodoPersona* nodo);
     Persona* getPersona();
     NodoPersona* getNext();
