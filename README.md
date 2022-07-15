@@ -52,7 +52,7 @@ Las librerias utilizadas fueron OpenCV en la cual utilizamos una sublibreria lla
 
 ### 2.2 Diseño 
 
-La implementación de la solución consta de un detector de personas HOG(histograma de gradientes orientados) el cual identificara la personas y le asignara un nodo el cual estará en una lista enlazada junto a otros nodos de personas. Las personas tendrán un identificador, contador propio de entrada y salida además de una locación dentro del video la cual llamaremos centroide , además tendremos 2 áreas enumeradas con 1 y 2. 
+![image](https://user-images.githubusercontent.com/89607555/179137572-149800b0-5207-4492-a579-b0f31d2e2dd6.png)
 
 ### 2.3 Implementación 
 
