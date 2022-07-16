@@ -9,7 +9,7 @@ The output was:
 Microsoft (R) Build Engine versión 16.9.0+5e4b48a27 para .NET Framework
 Copyright (C) Microsoft Corporation. Todos los derechos reservados.
 
-Compilación iniciada a las 15/7/2022 03:35:08.
+Compilación iniciada a las 15/7/2022 17:24:41.
 Proyecto "C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\build\CMakeFiles\3.23.2\CompilerIdC\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
 PrepareForBuild:
   Creando directorio "Debug\".
@@ -35,7 +35,7 @@ Compilación correcta.
     0 Advertencia(s)
     0 Errores
 
-Tiempo transcurrido 00:00:02.54
+Tiempo transcurrido 00:00:01.85
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -54,7 +54,7 @@ The output was:
 Microsoft (R) Build Engine versión 16.9.0+5e4b48a27 para .NET Framework
 Copyright (C) Microsoft Corporation. Todos los derechos reservados.
 
-Compilación iniciada a las 15/7/2022 03:35:12.
+Compilación iniciada a las 15/7/2022 17:24:44.
 Proyecto "C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\build\CMakeFiles\3.23.2\CompilerIdCXX\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
 PrepareForBuild:
   Creando directorio "Debug\".
@@ -80,7 +80,7 @@ Compilación correcta.
     0 Advertencia(s)
     0 Errores
 
-Tiempo transcurrido 00:00:01.73
+Tiempo transcurrido 00:00:01.75
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -92,28 +92,28 @@ The CXX compiler identification is MSVC, found in "C:/Users/Claudio Córtes M}/D
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/Claudio Córtes M}/Desktop/Carpetas/Universidad/Tercer Año/Estrutura de Datos/Taller1/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_71fba.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine versión 16.9.0+5e4b48a27 para .NET Framework
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_72c83.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine versión 16.9.0+5e4b48a27 para .NET Framework
 Copyright (C) Microsoft Corporation. Todos los derechos reservados.
 
   Compilador de optimización de C/C++ de Microsoft (R) versión 19.28.29914 para x64
   (C) Microsoft Corporation. Todos los derechos reservados.
   CMakeCCompilerABI.c
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_71fba.dir\Debug\\" /Fd"cmTC_71fba.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompilerABI.c"
-  cmTC_71fba.vcxproj -> C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\build\CMakeFiles\CMakeTmp\Debug\cmTC_71fba.exe
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_72c83.dir\Debug\\" /Fd"cmTC_72c83.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompilerABI.c"
+  cmTC_72c83.vcxproj -> C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\build\CMakeFiles\CMakeTmp\Debug\cmTC_72c83.exe
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/Claudio Córtes M}/Desktop/Carpetas/Universidad/Tercer Año/Estrutura de Datos/Taller1/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_e4b14.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine versión 16.9.0+5e4b48a27 para .NET Framework
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_6975d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine versión 16.9.0+5e4b48a27 para .NET Framework
 Copyright (C) Microsoft Corporation. Todos los derechos reservados.
 
   Compilador de optimización de C/C++ de Microsoft (R) versión 19.28.29914 para x64
   (C) Microsoft Corporation. Todos los derechos reservados.
   CMakeCXXCompilerABI.cpp
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e4b14.dir\Debug\\" /Fd"cmTC_e4b14.dir\Debug\vc142.pdb" /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp"
-  cmTC_e4b14.vcxproj -> C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\build\CMakeFiles\CMakeTmp\Debug\cmTC_e4b14.exe
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_6975d.dir\Debug\\" /Fd"cmTC_6975d.dir\Debug\vc142.pdb" /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp"
+  cmTC_6975d.vcxproj -> C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\build\CMakeFiles\CMakeTmp\Debug\cmTC_6975d.exe
 
 
 

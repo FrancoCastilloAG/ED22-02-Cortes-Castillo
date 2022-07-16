@@ -1,4 +1,6 @@
 #include "includes/ListaPersonas.h"
+#include "includes/NodoPersona.h"
+#include "includes/Persona.h"
 #include <math.h>
 using namespace std;
 
@@ -74,37 +76,3 @@ bool ListaPersonas::isEmpty(){
 int ListaPersonas::getSize(){
     return this->size;
 }
-
-/*
-bool ListaPersonas::del(NodoPersona* nodo){
-    NodoPersona* crrt1=this->first;
-    NodoPersona* crrt2=crrt1->getNext();
-    if(isEmpty()) return false;
-    while((crrt2->getPersona())->getId()!=(nodo->getPersona())->getId() || crrt2!=nullptr){
-        crrt1=crrt1->getNext();
-        crrt2=crrt2->getNext();
-    }
-    if(crrt2->getPersona()->getId()==nodo->getPersona()->getId()){
-        crrt1->setNext(crrt2->getNext());
-        return true;
-    }
-    return false;
-}
-
-/*
-NodoPersona* ListaPersonas::getNodoPersona(NodoPersona* nodo){
-    NodoPersona* crrt=this->first;
-    if(isEmpty()) return nullptr;
-    while((crrt->getPersona())->getId()!=(nodo->getPersona())->getId()){
-        if(crrt=nullptr){
-            return nullptr;
-        }
-        else if ((crrt->getPersona())->getId()==(nodo->getPersona())->getId())
-        {
-            return crrt;
-        }
-        crrt=crrt->getNext();
-    }
-    return nullptr;
-}
-*/
