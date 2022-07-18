@@ -8,15 +8,15 @@
 
 using namespace cv;
 using namespace std;
-
-
+#include "includes/ListaPersonas.h"
+#include"includes/NodoPersona.h"
 #include "includes/Detector.h"
 
 void Detector::toggleMode() { m = (m == Default ? Daimler : Default); }
     
 string Detector::modeName() const { return (m == Default ? "Default" : "Daimler"); }
 
-vector<Persona> Detector::detect(InputArray img){
+ListaPersonas Detector::detect(InputArray img){
         // Run the detector with default parameters. to get a higher hit-rate
         // (and more false alarms, respectively), decrease the hitThreshold and
         // groupThreshold (set groupThreshold to 0 to turn off the grouping completely).
@@ -27,13 +27,20 @@ vector<Persona> Detector::detect(InputArray img){
             hog_d.detectMultiScale(img, found, 1, Size(2,2), Size(4,4), 1.05, 3, true);
 
         // Convertir un objeto Rect a un objeto persona
-        vector<Persona> personas;
-
+        //vector<Persona> personas;
+        ListaPersonas personas;
+        for (vector<Rect>::iterator i = found.begin(); i != found.end(); ++i){
+            Rect &r = *i;
+            Persona* p= new Persona(r);
+            NodoPersona* nodo= new NodoPersona(p);
+            personas.add(nodo);
+        }
+       /*
         for (vector<Rect>::iterator i = found.begin(); i != found.end(); ++i){
             Rect &r = *i;
             Persona p(r);
             personas.push_back(p);
-        }
+        }*/
 
         return personas;
 }

@@ -5,13 +5,15 @@
 #include "logic/includes/NodoPersona.h"
 using namespace cv;
 using namespace std;
-void dibujarRectangulos(vector<Persona> found,Mat imagen){
-    for (vector<Persona>::iterator i = found.begin(); i != found.end(); ++i) {
-        Persona &p = *i;
-        rectangle(imagen, Point(p.getXComienzo(), p.getYComienzo()), Point(p.getXFin(), p.getYFin()), Scalar(0, 0, 255), 2);
-        circle(imagen,Point(p.getXCentro(), p.getYCentro()), 3,Scalar(0, 0, 255), 3);
-        circle(imagen,Point(p.getXComienzo(), p.getYComienzo()), 3,Scalar(255, 0, 255), 2);
-        circle(imagen,Point(p.getXFin(), p.getYFin()), 3,Scalar(0, 255, 255), 2);       
+void dibujarRectangulos(ListaPersonas found,Mat imagen){
+   NodoPersona* crrt= found.getFirst();
+   while(crrt!= nullptr){
+        Persona* p= crrt->getPersona();
+        rectangle(imagen, Point(p->getXComienzo(), p->getYComienzo()), Point(p->getXFin(), p->getYFin()), Scalar(0, 0, 255), 2);
+        //circle(imagen,Point(p.getXCentro(), p.getYCentro()), 3,Scalar(0, 0, 255), 3);
+        //circle(imagen,Point(p.getXComienzo(), p.getYComienzo()), 3,Scalar(255, 0, 255), 2);
+        //circle(imagen,Point(p.getXFin(), p.getYFin()), 3,Scalar(0, 255, 255), 2);
+        crrt=crrt->getNext();
    }
 }
 void ReconocerPersonas(ListaPersonas* Detectadas){
@@ -28,15 +30,17 @@ void ReconocerPersonas(ListaPersonas* Detectadas){
         int thickness = 1; //weith line
         line(imagen, p1, p2, Scalar(255, 0, 0),thickness, LINE_8); //draw a line between p1 and p2
         
-        vector<Persona> found = detector.detect(imagen);
+        ListaPersonas found = detector.detect(imagen);//lista de las personas detectadas en un frame
         dibujarRectangulos(found,imagen);
-        for(int i=0;i<found.size();i++){
-            NodoPersona* nodo= new NodoPersona(found[i]);
+        
+        NodoPersona* crrt= found.getFirst();
+        while(crrt!= nullptr){
             if(j==178){
-                Detectadas->add(nodo);
+                Detectadas->add(crrt);
             }else {
-                Detectadas->CompareAdd(nodo);
+                Detectadas->CompareAdd(crrt);
             }
+            crrt=crrt->getNext();
         }
    }
    

@@ -13,6 +13,9 @@
     <ClCompile Include="C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\src\logic\ListaPersonas.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\src\logic\NodoPersona.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\Claudio Córtes M}\Desktop\Carpetas\Universidad\Tercer Año\Estrutura de Datos\Taller1\CMakeLists.txt" />

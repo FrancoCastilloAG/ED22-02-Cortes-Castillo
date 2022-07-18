@@ -10,7 +10,7 @@
 #include <iomanip>
 
 #include "Persona.h"
-
+#include "ListaPersonas.h"
 
 using namespace cv;
 using namespace std;
@@ -31,7 +31,7 @@ public:
 
     string modeName() const;
 
-    vector<Persona> detect(InputArray img);
+    ListaPersonas detect(InputArray img);
 
     void adjustRect(Rect & r) const;
 };

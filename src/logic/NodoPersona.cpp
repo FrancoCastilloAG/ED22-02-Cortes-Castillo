@@ -1,8 +1,8 @@
 #include "includes/NodoPersona.h"
-
+#include "includes/Persona.h"
 using namespace std;
 
-NodoPersona::NodoPersona(Persona p){
+NodoPersona::NodoPersona(Persona *p){
     this->next=NULL;
     this->persona=p;
 }
